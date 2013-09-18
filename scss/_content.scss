@@ -1,0 +1,25 @@
+#content {
+   table {
+      tr {
+         td {
+            div {
+               width: 15px;
+               height: 15px;
+               border-radius: 100%;
+               color: $vote_color;
+               text-align: center;
+               font-size: $font_size - 2px;
+            }
+         }
+      }
+   }
+   @each $color in $colors { // loops through nested list of $colors
+      $id: nth($color, 1);  // splits out nested list into $id and $code
+      $code: nth($color, 2);
+
+      .#{$id} {  // creates the css for multiple div classes
+         background-color: #{$code};
+         float: left;
+      }
+   }
+}

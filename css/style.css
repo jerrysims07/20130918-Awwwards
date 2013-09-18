@@ -1,0 +1,19 @@
+#content table tr td div {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  font-size: 12px; }
+#content .red {
+  background-color: #df6c4f;
+  float: left; }
+#content .yellow {
+  background-color: #ecd06f;
+  float: left; }
+#content .green {
+  background-color: #409f89;
+  float: left; }
+#content .blue {
+  background-color: #1a99aa;
+  float: left; }
