@@ -1,0 +1,28 @@
+nav#main {
+   width: 100%;
+   div:first-child {
+      height: 30px;
+   }
+   >div:nth-child(2) {
+      border-top: 2px groove lighten($hr, 40%);
+      border-bottom: 2px groove lighten($hr, 40%);
+      height: 30px;
+   }
+   ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+         height: 24px;
+         font-size: $font_size - 1px;
+         padding-top: 6px;
+         float:left;
+         padding-right: 15px;
+            &:not(:first-child) { padding-left: 15px; }
+            &:not(:last-child) { border-right: 1px solid darken($hr, 10%); }
+         a {
+            color: $link-color;
+         }
+      }
+   }
+}
