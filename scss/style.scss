@@ -5,6 +5,7 @@
 @import 'content';
 @import 'footer';
 body {
+   border-top: 3px solid #444;
    background-color: $main_bg;
    font-family: $main_font;
    letter-spacing: 1px;
