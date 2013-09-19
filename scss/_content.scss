@@ -5,7 +5,7 @@
 }
 
 #content {
-   span { @include blue-italic; }
+   .bluetext { @include blue-italic; }
    >div {
 
       float: left;
@@ -16,6 +16,7 @@
          position: relative;
          left: 0;
          width: 459px;
+
          a{
             color: $link_color;
          }
@@ -29,22 +30,92 @@
          width: 120px;
          img {
             margin-left: 20px;
+            display: none;
+         }
+         .content {
+          width: 60px;
+          height: 60px;
+          background-color: $main_bg;
+          border-radius: 100%;
+          position: absolute;
+          left: 5px;
+          top: 5px;
+          >div {
+            width: 60px;
+            text-align: center;
+            position: relative;
+            top: 14px;
+            >span {
+              font-size: $font_size + 9px;
+            }
+          }
          }
          @each $color in $colors { // loops through nested list of $colors
             $id: nth($color, 1);  // splits out nested list into $id and $code
             $code: nth($color, 2);
 
             //Jerry's note: Was receiving a syntax error regarding this line.
-            $percent: nth($color, 2);
+            $percent: nth($color, 3);
+
+
+              $percent1: 180;
+              $percent2: ($percent - 50) * (180 / 50);
+
+
+            // @else {
+              // $percent1: 180;
+              // $percent2: ($percent - 50) * (180 / $percent);
+            // }
             .#{$id} {  // creates the css for multiple div classes
             // background-color: lighten(#{$code}, 20%);
-            background-color: #FFF;
+            // background-color: #FFF;
             width: 70px;
             height: 70px;
             border-radius: 100%;
             position: relative;
             left: 20px;
-            display: none;
+            .pie {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                -moz-border-radius: 35px;
+                -webkit-border-radius: 35px;
+                -o-border-radius: 35px;
+                border-radius: 35px;
+                clip: rect(0px, 35px, 70px, 0px);
+           }
+           .hold {
+                position: absolute;
+                background-color: lighten($code, 30%);
+                width: 70px;
+                height: 70px;
+                -moz-border-radius: 35px;
+                -webkit-border-radius: 35px;
+                -o-border-radius: 35px;
+                border-radius: 35px;
+                clip: rect(0px, 70px, 70px, 35px);
+           }
+           #pieSlice1 .pie {
+                background-color: $code;
+                -webkit-transform:rotate(#{$percent1}deg);
+                -moz-transform:rotate(#{$percent1}deg);
+                -o-transform:rotate(#{$percent1}deg);
+                transform:rotate(#{$percent1}deg);
+            }
+              #pieSlice2 {
+                -webkit-transform:rotate(#{$percent1}deg);
+                -moz-transform:rotate(#{$percent1}deg);
+                -o-transform:rotate(#{$percent1}deg);
+                transform:rotate(#{$percent1}deg);
+               }
+               #pieSlice2 .pie {
+                    background-color: $code;
+                    -webkit-transform:rotate(#{$percent2}deg);
+                    -moz-transform:rotate(#{$percent2}deg);
+                    -o-transform:rotate(#{$percent2}deg);
+                    transform:rotate(#{$percent2}deg);
+               }
+            // display: none;
             @if $id != blue {
                margin-bottom: 3px;
             }
