@@ -4,8 +4,22 @@
 @import 'nav';
 @import 'content';
 @import 'footer';
-
-#container
-{
-  margin:auto;
+body {
+   background-color: $main_bg;
+   font-family: $main_font;
+   letter-spacing: 1px;
+   font-color: $font_color;
 }
+a {
+   text-decoration: none;
+}
+.clear {
+   float: none;
+   clear: both;
+}
+#container {
+   width: 1200px;
+   margin: auto;
+}
+
+// header

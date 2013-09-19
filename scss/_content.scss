@@ -1,0 +1,92 @@
+@mixin blue_italic {
+   color: $highlight;
+   font-size: $font_size - 2px;
+   font-style: italic;
+}
+#content {
+   span { @include blue-italic; }
+   >div {
+
+      float: left;
+      >div {
+         float: left;
+      }
+      div:first-child {
+         position: relative;
+         left: 0;
+         width: 459px;
+         a{
+            color: $link_color;
+         }
+      }
+      #overlay {
+         position: absolute;
+         bottom: 85px;
+         left: -14px
+      }
+      #bigcircles {
+         width: 120px;
+         @each $color in $colors { // loops through nested list of $colors
+            $id: nth($color, 1);  // splits out nested list into $id and $code
+            $code: nth($color, 2);
+
+            .#{$id} {  // creates the css for multiple div classes
+            background-color: #{$code};
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            position: relative;
+            left: 20px;
+            @if $id != blue {
+               margin-bottom: 3px;
+            }
+         }
+      }
+   }
+}
+   table {
+      tr {
+         border-bottom: 1px solid $hr;
+         td {
+            font-weight: lighter;
+            color: $link_color;
+            font-size: $font-size - 1px;
+            padding: 8px 45px 8px 0;
+            div {
+               width: 15px;
+               height: 15px;
+               border-radius: 100%;
+               color: $vote_color;
+               text-align: center;
+               span {
+                  border-radius: 100%;
+                  color: $vote_color;
+                  font-size: $font_size - 4px;
+                  position: relative;
+                  bottom: 2px;
+                  right: 1px;
+               }
+            }
+            a {
+               color: $link_color;
+            }
+         }
+         td:nth-of-type(2):not(.top) a { @include blue_italic; }
+      }
+      tr:first-child td {
+         font-size: $font_size - 3px;
+      }
+      tr:last-child {
+         border-bottom: none;
+      }
+   }
+   @each $color in $colors { // loops through nested list of $colors
+      $id: nth($color, 1);  // splits out nested list into $id and $code
+      $code: nth($color, 2);
+
+      .#{$id} {  // creates the css for multiple div classes
+         background-color: #{$code};
+         float: left;
+      }
+   }
+}
