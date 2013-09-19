@@ -1,4 +1,29 @@
 header
 {
-  width:1200px;
+  width:1182px;
+  // Our site has the website awards nav bar as part of another nav div instead of header, so our header has less height than original
+  height:150px;
+
+  >div
+  {
+    width:291px;
+    height:68px;
+    float:left;
+
+    >img
+    {
+    padding-top:12px;
+    padding-left:3px;
+    }
+  }
+  >p
+  {
+    position:relative;
+    top:28px;
+    font-size:$font_size - 2px;
+    margin-left:10px;
+  }
+
+
+
 }

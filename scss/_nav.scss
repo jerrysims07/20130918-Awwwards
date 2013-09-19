@@ -1,14 +1,122 @@
+
+nav#main {
+   width: 100%;
+   margin-bottom: 40px;
+   div:first-child {
+      height: 30px;
+      ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         li {
+            font-size: $font_size + 2px;
+            font-weight: $font_bold;
+            float:left;
+            padding-right: 15px;
+            &:not(:first-child) { padding-left: 15px; }
+            a {
+                  color: darken($link-color, 10%);
+            }
+            &:last-child {
+               a {
+                  color: $highlight;
+               }
+            }
+         }
+      }
+      >div:last-child {
+         float: right;
+         position: relative;
+         bottom: 30px;
+         input[type=text] {
+            background-color: $main_bg;
+            color: lighten($font_color, 40%);
+            font-size: $font_size - 2px;
+            padding: 5px;
+            width: 150px;
+            border: 1px solid $hr;
+            border-radius: 2px;
+         }
+      }
+   }
+   >div:nth-child(2) {
+      border-top: 2px groove lighten($hr, 40%);
+      border-bottom: 2px groove lighten($hr, 40%);
+      height: 40px;
+      div:first-child {
+         float: left;
+      }
+   }
+   .buttons {
+      float: right;
+      div {
+         float: left;
+         vertical-align: middle;
+         text-align: center;
+         height: 40px;
+         position: relative;
+         // top: 0px;
+         &:not(:last-child) {
+            border-right: 1px solid darken($hr, 10%);
+            img {
+               position: relative;
+               top: 6px;
+            }
+         }
+         &:last-child {
+            img {
+               position: relative;
+               left: 5px;
+               top: 1px;
+            }
+         }
+         &:nth-child(4) {
+            padding-left: 3px;
+            padding-right: 3px;
+         }
+      }
+   }
+   ul#bottom {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float:left;
+      position: relative;
+      top: 0px;
+      >li {
+         height: 28px;
+         font-size: $font_size - 1px;
+         padding-top: 12px;
+         float:left;
+         padding-right: 15px;
+            &:not(:first-child) { padding-left: 15px; }
+            &:not(:last-child) { border-right: 1px solid darken($hr, 10%); }
+         >a {
+            color: $link-color;
+         }
+      }
+   }
+}
+
 #topNav
 {
   height:36px;
   div
   {
+    width:455px;
     float:right;
   }
   ul
   {
     list-style:none;
+    padding-left:0px;
   }
+
+  li:nth-child(6)
+  {
+    border-right:none;
+  }
+
   li
   {
     font-family:$main_font;
@@ -51,5 +159,6 @@
       margin-top:8px;
       margin-left:28px
     }
+
   }
 }

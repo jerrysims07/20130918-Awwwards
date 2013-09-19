@@ -1,13 +1,108 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
 header {
-  width: 1200px; }
+  width: 1182px;
+  height: 150px; }
+  header > div {
+    width: 291px;
+    height: 68px;
+    float: left; }
+    header > div > img {
+      padding-top: 12px;
+      padding-left: 3px; }
+  header > p {
+    position: relative;
+    top: 28px;
+    font-size: 12px;
+    margin-left: 10px; }
+
+nav#main {
+  width: 100%;
+  margin-bottom: 40px; }
+  nav#main div:first-child {
+    height: 30px; }
+    nav#main div:first-child ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      nav#main div:first-child ul li {
+        font-size: 16px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px; }
+        nav#main div:first-child ul li:not(:first-child) {
+          padding-left: 15px; }
+        nav#main div:first-child ul li a {
+          color: #42424f; }
+        nav#main div:first-child ul li:last-child a {
+          color: #409f89; }
+    nav#main div:first-child > div:last-child {
+      float: right;
+      position: relative;
+      bottom: 30px; }
+      nav#main div:first-child > div:last-child input[type=text] {
+        background-color: #e4e6e5;
+        color: #b6b6c1;
+        font-size: 12px;
+        padding: 5px;
+        width: 150px;
+        border: 1px solid #d5d7d6;
+        border-radius: 2px; }
+  nav#main > div:nth-child(2) {
+    border-top: 2px groove white;
+    border-bottom: 2px groove white;
+    height: 40px; }
+    nav#main > div:nth-child(2) div:first-child {
+      float: left; }
+  nav#main .buttons {
+    float: right; }
+    nav#main .buttons div {
+      float: left;
+      vertical-align: middle;
+      text-align: center;
+      height: 40px;
+      position: relative; }
+      nav#main .buttons div:not(:last-child) {
+        border-right: 1px solid #bbbebd; }
+        nav#main .buttons div:not(:last-child) img {
+          position: relative;
+          top: 6px; }
+      nav#main .buttons div:last-child img {
+        position: relative;
+        left: 5px;
+        top: 1px; }
+      nav#main .buttons div:nth-child(4) {
+        padding-left: 3px;
+        padding-right: 3px; }
+  nav#main ul#bottom {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    top: 0px; }
+    nav#main ul#bottom > li {
+      height: 28px;
+      font-size: 13px;
+      padding-top: 12px;
+      float: left;
+      padding-right: 15px; }
+      nav#main ul#bottom > li:not(:first-child) {
+        padding-left: 15px; }
+      nav#main ul#bottom > li:not(:last-child) {
+        border-right: 1px solid #bbbebd; }
+      nav#main ul#bottom > li > a {
+        color: #5a5a6b; }
 
 #topNav {
   height: 36px; }
   #topNav div {
+    width: 455px;
     float: right; }
   #topNav ul {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0px; }
+  #topNav li:nth-child(6) {
+    border-right: none; }
   #topNav li {
     font-family: "Gudea", sans-serif;
     display: inline-block;
@@ -57,37 +152,43 @@ header {
     left: -14px; }
   #content > div #bigcircles {
     width: 120px; }
+    #content > div #bigcircles img {
+      margin-left: 20px; }
     #content > div #bigcircles .red {
-      background-color: #df6c4f;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
       left: 20px;
+      display: none;
       margin-bottom: 3px; }
     #content > div #bigcircles .yellow {
-      background-color: #ecd06f;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
       left: 20px;
+      display: none;
       margin-bottom: 3px; }
     #content > div #bigcircles .green {
-      background-color: #409f89;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
       left: 20px;
+      display: none;
       margin-bottom: 3px; }
     #content > div #bigcircles .blue {
-      background-color: #1a99aa;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
-      left: 20px; }
+      left: 20px;
+      display: none; }
 #content table tr {
   border-bottom: 1px solid #d5d7d6; }
   #content table tr td {
@@ -131,11 +232,62 @@ header {
   background-color: #1a99aa;
   float: left; }
 
+#lower {
+  margin-top: 50px;
+  padding: 0; }
+  #lower div {
+    width: 218px;
+    display: inline-block;
+    margin: 0;
+    float: left; }
+    #lower div:not(last-child) {
+      margin-right: 22px; }
+    #lower div span:nth-of-type(1) {
+      margin: 10px 0 6px 0;
+      font-weight: 700;
+      font-size: 13px; }
+    #lower div .highlight {
+      color: #409f89;
+      font-size: 12px;
+      font-style: italic; }
+    #lower div * {
+      display: block; }
+
+footer > div {
+  height: 225px;
+  width: 1200px;
+  float: left;
+  border-top: 1px solid #bbbebd;
+  margin-top: 20px; }
+  footer > div > div#copyrightArea {
+    font-size: 11px;
+    padding-top: 12px;
+    float: left;
+    width: 525px;
+    height: 100px; }
+  footer > div > div#shareSpace {
+    float: right;
+    width: 200px;
+    height: 32px; }
+footer #shareLinks {
+  list-style: none; }
+  footer #shareLinks #facebookLink {
+    background-image: url("../images/facebookLogo.jpg"); }
+  footer #shareLinks #twitterLink {
+    background-image: url("../images/twitterLogo.jpg"); }
+footer div#bannerAd {
+  margin: auto;
+  clear: both;
+  repeat: no-repeat;
+  width: 750px;
+  height: 75px;
+  background-image: url("../images/bannerAd.jpg"); }
+
 body {
   background-color: #e4e6e5;
   font-family: "Gudea", sans-serif;
   letter-spacing: 1px;
-  font-color: #4e4e5d; }
+  color: #4e4e5d; }
 
 a {
   text-decoration: none; }

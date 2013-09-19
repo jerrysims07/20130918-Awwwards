@@ -1,0 +1,56 @@
+footer
+{
+  >div
+  {
+    height:225px;
+    width:1200px;
+    float:left;
+    border-top:1px solid $borderColor;
+    margin-top:20px;
+    >div#copyrightArea
+    {
+      font-size:$font_size - 3px;
+      padding-top:12px;
+      float:left;
+      width:525px;
+      height:100px;
+    }
+
+    >div#shareSpace
+    {
+      float:right;
+      width:200px;
+      height:32px;
+    }
+  }
+
+  #shareLinks
+  {
+    list-style:none;
+    li
+    {
+      // display:inline-block;
+      // background-image:url("../images/facebook.png")
+    }
+
+    #facebookLink
+    {
+      background-image:url("../images/facebookLogo.jpg");
+    }
+    #twitterLink
+    {
+      background-image:url("../images/twitterLogo.jpg");
+    }
+
+  }
+
+  div#bannerAd
+  {
+    margin:auto;
+    clear:both;
+    repeat:no-repeat;
+    width:750px;
+    height:75px;
+    background-image:url("../images/bannerAd.jpg")
+  }
+}
