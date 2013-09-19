@@ -24,6 +24,20 @@ nav#main {
             }
          }
       }
+      >div:last-child {
+         float: right;
+         position: relative;
+         bottom: 30px;
+         input[type=text] {
+            background-color: $main_bg;
+            color: lighten($font_color, 40%);
+            font-size: $font_size - 2px;
+            padding: 5px;
+            width: 150px;
+            border: 1px solid $hr;
+            border-radius: 2px;
+         }
+      }
    }
    >div:nth-child(2) {
       border-top: 2px groove lighten($hr, 40%);

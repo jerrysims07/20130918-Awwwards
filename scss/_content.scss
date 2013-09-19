@@ -3,6 +3,7 @@
    font-size: $font_size - 2px;
    font-style: italic;
 }
+
 #content {
    span { @include blue-italic; }
    >div {
@@ -26,21 +27,27 @@
       }
       #bigcircles {
          width: 120px;
+         img {
+            margin-left: 20px;
+         }
          @each $color in $colors { // loops through nested list of $colors
             $id: nth($color, 1);  // splits out nested list into $id and $code
             $code: nth($color, 2);
-
+            $percent: nth($color, 3);
             .#{$id} {  // creates the css for multiple div classes
-            background-color: #{$code};
+            // background-color: lighten(#{$code}, 20%);
+            background-color: #FFF;
             width: 70px;
             height: 70px;
             border-radius: 100%;
             position: relative;
             left: 20px;
+            display: none;
             @if $id != blue {
                margin-bottom: 3px;
             }
          }
+
       }
    }
 }
@@ -90,3 +97,27 @@
       }
    }
 }
+   #lower {
+      margin-top: 50px;
+      padding: 0;
+      div {
+         width: 218px;
+         display: inline-block;
+         margin: 0;
+         float: left;
+         &:not(last-child) {
+            margin-right: 22px;
+         }
+         span:nth-of-type(1) {
+            margin: 10px 0 6px 0;
+            font-weight: $font_bold;
+            font-size: $font_size - 1px;
+         }
+         .highlight {
+            @include blue_italic;
+         }
+         * {
+            display: block;
+         }
+      }
+   }

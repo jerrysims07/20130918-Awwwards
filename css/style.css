@@ -19,6 +19,18 @@ nav#main {
           color: #42424f; }
         nav#main div:first-child ul li:last-child a {
           color: #409f89; }
+    nav#main div:first-child > div:last-child {
+      float: right;
+      position: relative;
+      bottom: 30px; }
+      nav#main div:first-child > div:last-child input[type=text] {
+        background-color: #e4e6e5;
+        color: #b6b6c1;
+        font-size: 12px;
+        padding: 5px;
+        width: 150px;
+        border: 1px solid #d5d7d6;
+        border-radius: 2px; }
   nav#main > div:nth-child(2) {
     border-top: 2px groove white;
     border-bottom: 2px groove white;
@@ -94,37 +106,43 @@ nav#main {
     left: -14px; }
   #content > div #bigcircles {
     width: 120px; }
+    #content > div #bigcircles img {
+      margin-left: 20px; }
     #content > div #bigcircles .red {
-      background-color: #df6c4f;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
       left: 20px;
+      display: none;
       margin-bottom: 3px; }
     #content > div #bigcircles .yellow {
-      background-color: #ecd06f;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
       left: 20px;
+      display: none;
       margin-bottom: 3px; }
     #content > div #bigcircles .green {
-      background-color: #409f89;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
       left: 20px;
+      display: none;
       margin-bottom: 3px; }
     #content > div #bigcircles .blue {
-      background-color: #1a99aa;
+      background-color: #FFF;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
-      left: 20px; }
+      left: 20px;
+      display: none; }
 #content table tr {
   border-bottom: 1px solid #d5d7d6; }
   #content table tr td {
@@ -167,6 +185,27 @@ nav#main {
 #content .blue {
   background-color: #1a99aa;
   float: left; }
+
+#lower {
+  margin-top: 50px;
+  padding: 0; }
+  #lower div {
+    width: 218px;
+    display: inline-block;
+    margin: 0;
+    float: left; }
+    #lower div:not(last-child) {
+      margin-right: 22px; }
+    #lower div span:nth-of-type(1) {
+      margin: 10px 0 6px 0;
+      font-weight: 700;
+      font-size: 13px; }
+    #lower div .highlight {
+      color: #409f89;
+      font-size: 12px;
+      font-style: italic; }
+    #lower div * {
+      display: block; }
 
 body {
   background-color: #e4e6e5;
