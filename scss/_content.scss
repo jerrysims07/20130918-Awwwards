@@ -29,22 +29,50 @@
          width: 120px;
          img {
             margin-left: 20px;
+            display: none;
          }
          @each $color in $colors { // loops through nested list of $colors
             $id: nth($color, 1);  // splits out nested list into $id and $code
             $code: nth($color, 2);
 
             //Jerry's note: Was receiving a syntax error regarding this line.
-            $percent: nth($color, 2);
+            $percent: nth($color, 3);
             .#{$id} {  // creates the css for multiple div classes
             // background-color: lighten(#{$code}, 20%);
-            background-color: #FFF;
+            // background-color: #FFF;
             width: 70px;
             height: 70px;
             border-radius: 100%;
             position: relative;
             left: 20px;
-            display: none;
+            .pie {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                -moz-border-radius: 35px;
+                -webkit-border-radius: 35px;
+                -o-border-radius: 35px;
+                border-radius: 35px;
+                clip: rect(0px, 35px, 70px, 0px);
+           }
+           .hold {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                -moz-border-radius: 35px;
+                -webkit-border-radius: 35px;
+                -o-border-radius: 35px;
+                border-radius: 35px;
+                clip: rect(0px, 70px, 70px, 35px);
+           }
+           #pieSlice1 .pie {
+                background-color: #1b458b;
+                -webkit-transform:rotate(180deg);
+                -moz-transform:rotate(180deg);
+                -o-transform:rotate(180deg);
+                transform:rotate(180deg);
+            }
+            // display: none;
             @if $id != blue {
                margin-bottom: 3px;
             }

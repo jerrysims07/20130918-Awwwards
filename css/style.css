@@ -164,42 +164,131 @@ nav#main {
   #content > div #bigcircles {
     width: 120px; }
     #content > div #bigcircles img {
-      margin-left: 20px; }
-    #content > div #bigcircles .red {
-      background-color: #FFF;
-      width: 70px;
-      height: 70px;
-      border-radius: 100%;
-      position: relative;
-      left: 20px;
-      display: none;
-      margin-bottom: 3px; }
-    #content > div #bigcircles .yellow {
-      background-color: #FFF;
-      width: 70px;
-      height: 70px;
-      border-radius: 100%;
-      position: relative;
-      left: 20px;
-      display: none;
-      margin-bottom: 3px; }
-    #content > div #bigcircles .green {
-      background-color: #FFF;
-      width: 70px;
-      height: 70px;
-      border-radius: 100%;
-      position: relative;
-      left: 20px;
-      display: none;
-      margin-bottom: 3px; }
-    #content > div #bigcircles .blue {
-      background-color: #FFF;
-      width: 70px;
-      height: 70px;
-      border-radius: 100%;
-      position: relative;
-      left: 20px;
+      margin-left: 20px;
       display: none; }
+    #content > div #bigcircles .red {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px;
+      margin-bottom: 3px; }
+      #content > div #bigcircles .red .pie {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 35px, 70px, 0px); }
+      #content > div #bigcircles .red .hold {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 70px, 70px, 35px); }
+      #content > div #bigcircles .red #pieSlice1 .pie {
+        background-color: #1b458b;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    #content > div #bigcircles .yellow {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px;
+      margin-bottom: 3px; }
+      #content > div #bigcircles .yellow .pie {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 35px, 70px, 0px); }
+      #content > div #bigcircles .yellow .hold {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 70px, 70px, 35px); }
+      #content > div #bigcircles .yellow #pieSlice1 .pie {
+        background-color: #1b458b;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    #content > div #bigcircles .green {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px;
+      margin-bottom: 3px; }
+      #content > div #bigcircles .green .pie {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 35px, 70px, 0px); }
+      #content > div #bigcircles .green .hold {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 70px, 70px, 35px); }
+      #content > div #bigcircles .green #pieSlice1 .pie {
+        background-color: #1b458b;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    #content > div #bigcircles .blue {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px; }
+      #content > div #bigcircles .blue .pie {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 35px, 70px, 0px); }
+      #content > div #bigcircles .blue .hold {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -o-border-radius: 35px;
+        border-radius: 35px;
+        clip: rect(0px, 70px, 70px, 35px); }
+      #content > div #bigcircles .blue #pieSlice1 .pie {
+        background-color: #1b458b;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg); }
 #content table tr {
   border-bottom: 1px solid #d5d7d6; }
   #content table tr td {
