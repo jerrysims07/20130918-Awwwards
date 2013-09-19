@@ -143,7 +143,7 @@ nav#main {
       margin-top: 8px;
       margin-left: 28px; }
 
-#content span {
+#content .bluetext {
   color: #409f89;
   font-size: 12px;
   font-style: italic; }
@@ -166,6 +166,21 @@ nav#main {
     #content > div #bigcircles img {
       margin-left: 20px;
       display: none; }
+    #content > div #bigcircles .content {
+      width: 60px;
+      height: 60px;
+      background-color: #e4e6e5;
+      border-radius: 100%;
+      position: absolute;
+      left: 5px;
+      top: 5px; }
+      #content > div #bigcircles .content > div {
+        width: 60px;
+        text-align: center;
+        position: relative;
+        top: 14px; }
+        #content > div #bigcircles .content > div > span {
+          font-size: 23px; }
     #content > div #bigcircles .red {
       width: 70px;
       height: 70px;
@@ -184,6 +199,7 @@ nav#main {
         clip: rect(0px, 35px, 70px, 0px); }
       #content > div #bigcircles .red .hold {
         position: absolute;
+        background-color: #f7d8d0;
         width: 70px;
         height: 70px;
         -moz-border-radius: 35px;
@@ -192,7 +208,7 @@ nav#main {
         border-radius: 35px;
         clip: rect(0px, 70px, 70px, 35px); }
       #content > div #bigcircles .red #pieSlice1 .pie {
-        background-color: #1b458b;
+        background-color: #df6c4f;
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
@@ -203,11 +219,11 @@ nav#main {
         -o-transform: rotate(180deg);
         transform: rotate(180deg); }
       #content > div #bigcircles .red #pieSlice2 .pie {
-        background-color: #1b458b;
-        -webkit-transform: rotate(40deg);
-        -moz-transform: rotate(40deg);
-        -o-transform: rotate(40deg);
-        transform: rotate(40deg); }
+        background-color: #df6c4f;
+        -webkit-transform: rotate(108deg);
+        -moz-transform: rotate(108deg);
+        -o-transform: rotate(108deg);
+        transform: rotate(108deg); }
     #content > div #bigcircles .yellow {
       width: 70px;
       height: 70px;
@@ -226,6 +242,7 @@ nav#main {
         clip: rect(0px, 35px, 70px, 0px); }
       #content > div #bigcircles .yellow .hold {
         position: absolute;
+        background-color: #fefcf6;
         width: 70px;
         height: 70px;
         -moz-border-radius: 35px;
@@ -234,7 +251,7 @@ nav#main {
         border-radius: 35px;
         clip: rect(0px, 70px, 70px, 35px); }
       #content > div #bigcircles .yellow #pieSlice1 .pie {
-        background-color: #1b458b;
+        background-color: #ecd06f;
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
@@ -245,11 +262,11 @@ nav#main {
         -o-transform: rotate(180deg);
         transform: rotate(180deg); }
       #content > div #bigcircles .yellow #pieSlice2 .pie {
-        background-color: #1b458b;
-        -webkit-transform: rotate(40deg);
-        -moz-transform: rotate(40deg);
-        -o-transform: rotate(40deg);
-        transform: rotate(40deg); }
+        background-color: #ecd06f;
+        -webkit-transform: rotate(108deg);
+        -moz-transform: rotate(108deg);
+        -o-transform: rotate(108deg);
+        transform: rotate(108deg); }
     #content > div #bigcircles .green {
       width: 70px;
       height: 70px;
@@ -268,6 +285,7 @@ nav#main {
         clip: rect(0px, 35px, 70px, 0px); }
       #content > div #bigcircles .green .hold {
         position: absolute;
+        background-color: #9fd9cb;
         width: 70px;
         height: 70px;
         -moz-border-radius: 35px;
@@ -276,7 +294,7 @@ nav#main {
         border-radius: 35px;
         clip: rect(0px, 70px, 70px, 35px); }
       #content > div #bigcircles .green #pieSlice1 .pie {
-        background-color: #1b458b;
+        background-color: #409f89;
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
@@ -287,11 +305,11 @@ nav#main {
         -o-transform: rotate(180deg);
         transform: rotate(180deg); }
       #content > div #bigcircles .green #pieSlice2 .pie {
-        background-color: #1b458b;
-        -webkit-transform: rotate(40deg);
-        -moz-transform: rotate(40deg);
-        -o-transform: rotate(40deg);
-        transform: rotate(40deg); }
+        background-color: #409f89;
+        -webkit-transform: rotate(77.04deg);
+        -moz-transform: rotate(77.04deg);
+        -o-transform: rotate(77.04deg);
+        transform: rotate(77.04deg); }
     #content > div #bigcircles .blue {
       width: 70px;
       height: 70px;
@@ -309,6 +327,7 @@ nav#main {
         clip: rect(0px, 35px, 70px, 0px); }
       #content > div #bigcircles .blue .hold {
         position: absolute;
+        background-color: #73dcea;
         width: 70px;
         height: 70px;
         -moz-border-radius: 35px;
@@ -317,7 +336,7 @@ nav#main {
         border-radius: 35px;
         clip: rect(0px, 70px, 70px, 35px); }
       #content > div #bigcircles .blue #pieSlice1 .pie {
-        background-color: #1b458b;
+        background-color: #1a99aa;
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
@@ -328,11 +347,11 @@ nav#main {
         -o-transform: rotate(180deg);
         transform: rotate(180deg); }
       #content > div #bigcircles .blue #pieSlice2 .pie {
-        background-color: #1b458b;
-        -webkit-transform: rotate(40deg);
-        -moz-transform: rotate(40deg);
-        -o-transform: rotate(40deg);
-        transform: rotate(40deg); }
+        background-color: #1a99aa;
+        -webkit-transform: rotate(82.44deg);
+        -moz-transform: rotate(82.44deg);
+        -o-transform: rotate(82.44deg);
+        transform: rotate(82.44deg); }
 #content table tr {
   border-bottom: 1px solid #d5d7d6; }
   #content table tr td {
