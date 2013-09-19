@@ -1,10 +1,63 @@
-#content table tr td div {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  color: white;
-  text-align: center;
-  font-size: 12px; }
+@import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
+#content span {
+  color: #409f89;
+  font-size: 12px;
+  font-style: italic; }
+#content > div {
+  float: left; }
+  #content > div > div {
+    float: left; }
+  #content > div div:first-child {
+    width: 459px; }
+  #content > div #bigcircles {
+    width: 120px; }
+    #content > div #bigcircles .red {
+      background-color: #df6c4f;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px; }
+    #content > div #bigcircles .yellow {
+      background-color: #ecd06f;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px; }
+    #content > div #bigcircles .green {
+      background-color: #409f89;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px; }
+    #content > div #bigcircles .blue {
+      background-color: #1a99aa;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      position: relative;
+      left: 20px; }
+#content table tr {
+  border-bottom: 1px solid #d5d7d6; }
+  #content table tr td {
+    font-weight: lighter;
+    font-size: 13px;
+    padding: 8px 30px 8px 0; }
+    #content table tr td div {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      color: white;
+      text-align: center;
+      font-size: 12px; }
+  #content table tr td:nth-of-type(2):not(.top) {
+    color: #409f89;
+    font-size: 12px;
+    font-style: italic; }
+#content table tr:last-child {
+  border-bottom: none; }
 #content .red {
   background-color: #df6c4f;
   float: left; }
@@ -17,3 +70,20 @@
 #content .blue {
   background-color: #1a99aa;
   float: left; }
+
+body {
+  background-color: #e4e6e5;
+  font-family: "Gudea", sans-serif;
+  letter-spacing: 1px;
+  font-color: #4e4e5d; }
+
+a {
+  text-decoration: none; }
+
+.clear {
+  float: none;
+  clear: both; }
+
+#container {
+  width: 1200px;
+  margin: auto; }
