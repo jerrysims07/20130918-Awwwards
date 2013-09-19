@@ -72,6 +72,19 @@
                 -o-transform:rotate(180deg);
                 transform:rotate(180deg);
             }
+              #pieSlice2 {
+                -webkit-transform:rotate(180deg);
+                -moz-transform:rotate(180deg);
+                -o-transform:rotate(180deg);
+                transform:rotate(180deg);
+               }
+               #pieSlice2 .pie {
+                    background-color: #1b458b;
+                    -webkit-transform:rotate(40deg);
+                    -moz-transform:rotate(40deg);
+                    -o-transform:rotate(40deg);
+                    transform:rotate(40deg);
+               }
             // display: none;
             @if $id != blue {
                margin-bottom: 3px;
