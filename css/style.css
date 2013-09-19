@@ -1,36 +1,78 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
 nav#main {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 40px; }
   nav#main div:first-child {
     height: 30px; }
+    nav#main div:first-child ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      nav#main div:first-child ul li {
+        font-size: 16px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px; }
+        nav#main div:first-child ul li:not(:first-child) {
+          padding-left: 15px; }
+        nav#main div:first-child ul li a {
+          color: #42424f; }
+        nav#main div:first-child ul li:last-child a {
+          color: #409f89; }
   nav#main > div:nth-child(2) {
     border-top: 2px groove white;
     border-bottom: 2px groove white;
-    height: 30px; }
-  nav#main ul {
+    height: 40px; }
+    nav#main > div:nth-child(2) div:first-child {
+      float: left; }
+  nav#main .buttons {
+    float: right; }
+    nav#main .buttons div {
+      float: left;
+      vertical-align: middle;
+      text-align: center;
+      height: 40px;
+      position: relative; }
+      nav#main .buttons div:not(:last-child) {
+        border-right: 1px solid #bbbebd; }
+        nav#main .buttons div:not(:last-child) img {
+          position: relative;
+          top: 6px; }
+      nav#main .buttons div:last-child img {
+        position: relative;
+        left: 5px;
+        top: 1px; }
+      nav#main .buttons div:nth-child(4) {
+        padding-left: 3px;
+        padding-right: 3px; }
+  nav#main ul#bottom {
     list-style: none;
     margin: 0;
-    padding: 0; }
-    nav#main ul li {
-      height: 24px;
+    padding: 0;
+    float: left;
+    position: relative;
+    top: 0px; }
+    nav#main ul#bottom > li {
+      height: 28px;
       font-size: 13px;
-      padding-top: 6px;
+      padding-top: 12px;
       float: left;
       padding-right: 15px; }
-      nav#main ul li:not(:first-child) {
+      nav#main ul#bottom > li:not(:first-child) {
         padding-left: 15px; }
-      nav#main ul li:not(:last-child) {
+      nav#main ul#bottom > li:not(:last-child) {
         border-right: 1px solid #bbbebd; }
-      nav#main ul li a {
+      nav#main ul#bottom > li > a {
         color: #5a5a6b; }
-  nav#main #topNav div {
-    width: 1200px; }
-  nav#main #topNav ul {
-    list-style: none; }
-  nav#main #topNav li {
-    font-family: "Gudea", sans-serif;
-    display: inline-block;
-    float: right; }
+
+#topNav div {
+  width: 1200px; }
+#topNav ul {
+  list-style: none; }
+#topNav li {
+  font-family: "Gudea", sans-serif;
+  display: inline-block;
+  float: right; }
 
 #content span {
   color: #409f89;

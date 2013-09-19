@@ -1,32 +1,88 @@
 
 nav#main {
    width: 100%;
+   margin-bottom: 40px;
    div:first-child {
       height: 30px;
+      ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         li {
+            font-size: $font_size + 2px;
+            font-weight: $font_bold;
+            float:left;
+            padding-right: 15px;
+            &:not(:first-child) { padding-left: 15px; }
+            a {
+                  color: darken($link-color, 10%);
+            }
+            &:last-child {
+               a {
+                  color: $highlight;
+               }
+            }
+         }
+      }
    }
    >div:nth-child(2) {
       border-top: 2px groove lighten($hr, 40%);
       border-bottom: 2px groove lighten($hr, 40%);
-      height: 30px;
+      height: 40px;
+      div:first-child {
+         float: left;
+      }
    }
-   ul {
+   .buttons {
+      float: right;
+      div {
+         float: left;
+         vertical-align: middle;
+         text-align: center;
+         height: 40px;
+         position: relative;
+         // top: 0px;
+         &:not(:last-child) {
+            border-right: 1px solid darken($hr, 10%);
+            img {
+               position: relative;
+               top: 6px;
+            }
+         }
+         &:last-child {
+            img {
+               position: relative;
+               left: 5px;
+               top: 1px;
+            }
+         }
+         &:nth-child(4) {
+            padding-left: 3px;
+            padding-right: 3px;
+         }
+      }
+   }
+   ul#bottom {
       list-style: none;
       margin: 0;
       padding: 0;
-      li {
-         height: 24px;
+      float:left;
+      position: relative;
+      top: 0px;
+      >li {
+         height: 28px;
          font-size: $font_size - 1px;
-         padding-top: 6px;
+         padding-top: 12px;
          float:left;
          padding-right: 15px;
             &:not(:first-child) { padding-left: 15px; }
             &:not(:last-child) { border-right: 1px solid darken($hr, 10%); }
-         a {
+         >a {
             color: $link-color;
          }
       }
    }
-
+}
 #topNav
 {
   div
@@ -43,5 +99,5 @@ nav#main {
       display:inline-block;
       float:right;
   }
-}
+
 }
