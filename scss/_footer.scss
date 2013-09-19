@@ -27,9 +27,13 @@ footer
   #shareLinks
   {
     list-style:none;
+    padding-left:0px;
+
     li
     {
-      // display:inline-block;
+      width:32px;
+      height:32px;
+      display:inline-block;
       // background-image:url("../images/facebook.png")
     }
 
@@ -37,9 +41,25 @@ footer
     {
       background-image:url("../images/facebookLogo.jpg");
     }
+
     #twitterLink
     {
       background-image:url("../images/twitterLogo.jpg");
+    }
+
+    #mtvLink
+    {
+      background-image:url("../images/mtvLogo.jpg");
+    }
+
+    #bigALink
+    {
+      background-image:url("../images/bigALogo.jpg");
+    }
+
+    #pinterestLink
+    {
+      background-image:url("../images/pinterestLogo.jpg");
     }
 
   }
@@ -49,7 +69,7 @@ footer
     margin:auto;
     clear:both;
     repeat:no-repeat;
-    width:750px;
+    width:575px;
     height:75px;
     background-image:url("../images/bannerAd.jpg")
   }

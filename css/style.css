@@ -107,12 +107,28 @@ nav#main {
 #topNav {
   height: 36px; }
   #topNav div {
-    width: 455px;
+    width: 506px;
     float: right; }
   #topNav ul {
     list-style: none;
     padding-left: 0px; }
+  #topNav #tinyShareBar {
+    list-style: none;
+    display: inline-block; }
+    #topNav #tinyShareBar li {
+      border: none;
+      width: 14px;
+      height: 14px;
+      padding: 0px; }
+    #topNav #tinyShareBar li:nth-child(1) {
+      background-image: url("../images/tinyFacebook.png"); }
+    #topNav #tinyShareBar li:nth-child(2) {
+      background-image: url("../images/tinyTwitter.png"); }
+    #topNav #tinyShareBar li:nth-child(3) {
+      background-image: url("../images/tinyRSS.png"); }
   #topNav li:nth-child(6) {
+    border-right: none; }
+  #topNav li:nth-child(7) {
     border-right: none; }
   #topNav li {
     font-family: "Gudea", sans-serif;
@@ -281,16 +297,27 @@ footer > div {
     width: 200px;
     height: 32px; }
 footer #shareLinks {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0px; }
+  footer #shareLinks li {
+    width: 32px;
+    height: 32px;
+    display: inline-block; }
   footer #shareLinks #facebookLink {
     background-image: url("../images/facebookLogo.jpg"); }
   footer #shareLinks #twitterLink {
     background-image: url("../images/twitterLogo.jpg"); }
+  footer #shareLinks #mtvLink {
+    background-image: url("../images/mtvLogo.jpg"); }
+  footer #shareLinks #bigALink {
+    background-image: url("../images/bigALogo.jpg"); }
+  footer #shareLinks #pinterestLink {
+    background-image: url("../images/pinterestLogo.jpg"); }
 footer div#bannerAd {
   margin: auto;
   clear: both;
   repeat: no-repeat;
-  width: 750px;
+  width: 575px;
   height: 75px;
   background-image: url("../images/bannerAd.jpg"); }
 
