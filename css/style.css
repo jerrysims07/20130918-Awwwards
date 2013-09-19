@@ -8,7 +8,15 @@
   #content > div > div {
     float: left; }
   #content > div div:first-child {
+    position: relative;
+    left: 0;
     width: 459px; }
+    #content > div div:first-child a {
+      color: #5a5a6b; }
+  #content > div #overlay {
+    position: absolute;
+    bottom: 85px;
+    left: -14px; }
   #content > div #bigcircles {
     width: 120px; }
     #content > div #bigcircles .red {
@@ -17,21 +25,24 @@
       height: 70px;
       border-radius: 100%;
       position: relative;
-      left: 20px; }
+      left: 20px;
+      margin-bottom: 3px; }
     #content > div #bigcircles .yellow {
       background-color: #ecd06f;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
-      left: 20px; }
+      left: 20px;
+      margin-bottom: 3px; }
     #content > div #bigcircles .green {
       background-color: #409f89;
       width: 70px;
       height: 70px;
       border-radius: 100%;
       position: relative;
-      left: 20px; }
+      left: 20px;
+      margin-bottom: 3px; }
     #content > div #bigcircles .blue {
       background-color: #1a99aa;
       width: 70px;
@@ -43,19 +54,30 @@
   border-bottom: 1px solid #d5d7d6; }
   #content table tr td {
     font-weight: lighter;
+    color: #5a5a6b;
     font-size: 13px;
-    padding: 8px 30px 8px 0; }
+    padding: 8px 45px 8px 0; }
     #content table tr td div {
       width: 15px;
       height: 15px;
       border-radius: 100%;
       color: white;
-      text-align: center;
-      font-size: 12px; }
-  #content table tr td:nth-of-type(2):not(.top) {
+      text-align: center; }
+      #content table tr td div span {
+        border-radius: 100%;
+        color: white;
+        font-size: 10px;
+        position: relative;
+        bottom: 2px;
+        right: 1px; }
+    #content table tr td a {
+      color: #5a5a6b; }
+  #content table tr td:nth-of-type(2):not(.top) a {
     color: #409f89;
     font-size: 12px;
     font-style: italic; }
+#content table tr:first-child td {
+  font-size: 11px; }
 #content table tr:last-child {
   border-bottom: none; }
 #content .red {
