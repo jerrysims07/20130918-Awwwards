@@ -35,6 +35,14 @@ nav#main {
           color: #42424f; }
         nav#main div:first-child ul li:last-child a {
           color: #409f89; }
+        nav#main div:first-child ul li a {
+          -webkit-transition: color ease-in-out .4s;
+          -moz-transition: color ease-in-out .4s;
+          -ms-transition: color ease-in-out .4s;
+          -o-transition: color ease-in-out .4s;
+          transition: color ease-in-out .4s; }
+          nav#main div:first-child ul li a:hover {
+            color: #a8a8b6; }
     nav#main div:first-child > div:last-child {
       float: right;
       position: relative;
@@ -54,13 +62,14 @@ nav#main {
     nav#main > div:nth-child(2) div:first-child {
       float: left; }
   nav#main .buttons {
-    float: right; }
+    float: right;
+    position: relative;
+    left: 162px; }
     nav#main .buttons div {
       float: left;
       vertical-align: middle;
       text-align: center;
-      height: 40px;
-      position: relative; }
+      height: 40px; }
       nav#main .buttons div:not(:last-child) {
         border-right: 1px solid #bbbebd; }
         nav#main .buttons div:not(:last-child) img {
@@ -92,6 +101,8 @@ nav#main {
         border-right: 1px solid #bbbebd; }
       nav#main ul#bottom > li > a {
         color: #5a5a6b; }
+      nav#main ul#bottom > li:hover {
+        border-bottom: 1px solid black; }
 
 #topNav {
   height: 36px; }

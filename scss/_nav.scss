@@ -22,6 +22,16 @@ nav#main {
                   color: $highlight;
                }
             }
+            a {
+               -webkit-transition: color ease-in-out .4s;
+               -moz-transition: color ease-in-out .4s;
+               -ms-transition: color ease-in-out .4s;
+               -o-transition: color ease-in-out .4s;
+               transition: color ease-in-out .4s;
+               &:hover {
+                  color: lighten($font_color, 35%);
+               }
+            }
          }
       }
       >div:last-child {
@@ -49,12 +59,14 @@ nav#main {
    }
    .buttons {
       float: right;
+      position: relative;
+      left: 162px;
       div {
          float: left;
          vertical-align: middle;
          text-align: center;
          height: 40px;
-         position: relative;
+         // position: relative;
          // top: 0px;
          &:not(:last-child) {
             border-right: 1px solid darken($hr, 10%);
@@ -93,6 +105,10 @@ nav#main {
             &:not(:last-child) { border-right: 1px solid darken($hr, 10%); }
          >a {
             color: $link-color;
+
+         }
+         &:hover{
+            border-bottom: 1px solid black;
          }
       }
    }
